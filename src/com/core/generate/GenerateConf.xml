@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<!-- 模板配置 模板文件路径和model\dao\service\controller对应需要的模板名 by hui-->
+	<ftl path="\\src\\com\\core\\generate\\ftl">
+		<param name="model">/model.ftl</param>
+		<param name="dao">/dao.ftl</param>
+		<param name="service">/service.ftl</param>
+		<param name="controller">/controller.ftl</param>
+	</ftl>
+	<!-- controller.ftl需要的信息
+			path controller包路径
+			packageName controller中的java文件需要指定包名 -->
+	<controller path="d:\\Users\\Desktop\\hui\\controller">
+		<packageName>com.project.admin.controllers</packageName>
+	</controller>
+	<!-- service.ftl需要的信息
+			path service包路径
+			packageName service中的java文件需要指定包名 -->
+	<service path="d:\\Users\\Desktop\\hui\\service">
+		<packageName>com.project.service</packageName>
+	</service>
+	<!-- dao.ftl需要的信息
+			path dao包路径
+			packageName dao中的java文件需要指定包名 -->
+	<dao path="d:\\Users\\Desktop\\hui\\dao">
+		<packageName>com.project.dao</packageName>
+	</dao>
+	<!-- model.ftl需要的信息
+			path model包路径
+			packageName model中的java文件需要指定包名
+			class 实体类名 (首字母需大写)
+			remark 实体类功能说明
+			field 实体类中的字段
+			fieldName 字段名
+			fieldType 字段类型
+			fieldComment 字段注释 -->
+	<model path="d:\\Users\\Desktop\\hui\\model">
+<!-- 		<projectName>project_admin</projectName> -->
+		<packageName>com.hui.model</packageName>
+		<class>ActivitySignup</class>
+		<remark>活动报名</remark>
+		<field>
+			<fieldName>id</fieldName>
+			<fieldType>Long</fieldType>
+			<fieldComment>id</fieldComment>
+		</field>
+		<field>
+			<fieldName>userId</fieldName>
+			<fieldType>Long</fieldType>
+			<fieldComment>用户id</fieldComment>
+		</field>
+		<field>
+			<fieldName>menuId</fieldName>
+			<fieldType>Long</fieldType>
+			<fieldComment>菜单id</fieldComment>
+		</field>
+	</model>
+</root>
